@@ -1,3 +1,4 @@
+import { CallApiService } from './services/call-api.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  constructor(private _api:CallApiService){
+
+  }
+
+  testCode(code:string){
+    this._api.callApi(code).subscribe(res$ => {});
+  }
+
 }
