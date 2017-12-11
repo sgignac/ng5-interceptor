@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 import { ErrorComponent } from './components/error/error.component';
 import { MaintenanceComponent } from './components/maintenance/maintenance.component';
 import { HomeComponent } from './components/home/home.component';
+import { NohitComponent } from './components/nohit/nohit.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { HomeComponent } from './components/home/home.component';
     AppComponent,
     ErrorComponent,
     MaintenanceComponent,
-    HomeComponent
+    HomeComponent,
+    NohitComponent
   ],
   imports: [
     BrowserModule,
